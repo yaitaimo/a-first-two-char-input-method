@@ -5,6 +5,7 @@
 TODO:大きなデータを扱いうる仕様とすべき．
 '''
 
+from re
 from sys import argv, exit
 
 
@@ -35,7 +36,10 @@ def add_index(word):
 
 def make_corpus():
     n_data = []
+    p = re.compile('[^,.\w]')
     for line in data:
+        if p.search(line):
+            continue
         words = line.split()
         for word in words:
             n_word = add_index(word)
@@ -53,9 +57,9 @@ def make_corpus():
 
 
 def save_data(data):
-    with open('two_chara_index.corpus', 'w') as f:
+    with open('two_chara_index.corpus', 'a') as f:
         for d in data:
-            f.write('{}\s'.format(d))
+            f.write('{}\n'.format(d))
 
 
 if __name__ = '__main__':
