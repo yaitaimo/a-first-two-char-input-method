@@ -5,7 +5,6 @@ import re
 
 
 def get_mk():
-    opt = "-model /usr/local/share/kytea/model.bin"
     mk = Mykytea.Mykytea(opt)
     return mk
 
