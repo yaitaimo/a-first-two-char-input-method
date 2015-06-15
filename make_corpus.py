@@ -63,7 +63,7 @@ def make_corpus(data):
         if error_flag:
             continue
         n_data.append(' '.join(converted_words))
-    print('all line = {}, bad line = {}.'.format(all_line_cnt, bad_line_cnt), 
+    print('all line = {}, bad line = {}.'.format(all_line_cnt, bad_line_cnt),
           file=stderr)
     return n_data
 
