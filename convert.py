@@ -5,6 +5,7 @@ import re
 
 
 def get_mk():
+    opt = ''
     mk = Mykytea.Mykytea(opt)
     return mk
 
