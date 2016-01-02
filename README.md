@@ -23,7 +23,7 @@ Th/there is/is a/a pe/people ./.
 Create corpus with what kind of documents you need. (English only)  
 The documents' format must be following.
 
-"""text.txt  
+"""
 This is a pen.  
 How are you today.  
 Children are playing outside.  
