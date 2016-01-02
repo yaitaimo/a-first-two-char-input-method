@@ -1,11 +1,12 @@
 #!/usr/bin/evn python3
 
-import Mykytea
 import re
+import sys
+
+import Mykytea
 
 
-def get_mk():
-    opt = ''
+def get_mk(opt=''):
     mk = Mykytea.Mykytea(opt)
     return mk
 
@@ -16,7 +17,10 @@ def get_kytea_txt(mk, txt):
     return n_txt
 
 if __name__ == '__main__':
-    mk = get_mk()
+    if len(sys.argv) != 1:
+        mk = get_mk(' '.join(sys.argv[1:]))
+    else:
+        mk = get_mk()
     while True:
         try:
             txt = input()
