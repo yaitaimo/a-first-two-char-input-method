@@ -18,6 +18,9 @@ def get_kytea_txt(mk, txt):
 if __name__ == '__main__':
     mk = get_mk()
     while True:
-        txt = input()
+        try:
+            txt = input()
+        except EOFError:
+            break
         n_txt = get_kytea_txt(mk, txt)
         print(n_txt)
