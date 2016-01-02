@@ -10,6 +10,8 @@ Th/there is/is a/a pe/people ./.
 ```
 
 自分の利用したいドメインに対応した文書を用意し，そこからコーパスを作成し，KyTeaのモデルを構築することで，より適切な文章を組み立てることが可能となる．
+（sample.dat のダウンロードは[こちら
+](https://github.com/yaitaimo/a-first-two-char-input-method/releases/tag/1)）
 
 ## 環境構築
 - [KyTea](http://www.phontron.com/kytea/)
